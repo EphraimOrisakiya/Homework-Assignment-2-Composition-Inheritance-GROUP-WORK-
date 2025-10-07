@@ -7,8 +7,8 @@ public class Professor extends Teacher{
 
   // Constructors
   //Fully loaded constructor
-  public Professor(String name, boolean alive, int age, String SSN, String employeeID, double salary, int yrsInProf, String specialty, String researchArea, String rank, boolean tenured){
-    super(name, alive, age, SSN, employeeID, salary, yrsInProf);
+  public Professor(String name, Boolean alive, int age, String SSN, String id, int salary, int yrs, String specialty, String researchArea, String rank, boolean tenured){
+    super(name, alive, age, SSN, id, salary, yrs);
     if (!isValidDerived(specialty, researchArea, rank, tenured)){
       System.out.println("Error: Invalid Professor object");
       System.exit(0);

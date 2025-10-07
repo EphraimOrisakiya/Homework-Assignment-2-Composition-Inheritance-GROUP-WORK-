@@ -20,6 +20,10 @@ public class Teacher extends Person{ //making subclass teacher
         this.numofyearteaching = copy.numofyearteaching;
     }
 
+    public Teacher(){ //no arg constructor
+
+    }
+
     public String getID(){ //creating get methods
         return this.id;
     }

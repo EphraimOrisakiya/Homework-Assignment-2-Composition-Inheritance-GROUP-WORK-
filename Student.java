@@ -16,6 +16,10 @@ public class Student extends Person{ //creating subclass student
         this.stu_id = copy.stu_id;
         this.gpa = copy.gpa;
     }
+
+    public Student(){ //no arg constructor
+
+    }
     
     public String getID(){ //creating the get methods
         return this.stu_id;
