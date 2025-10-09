@@ -73,7 +73,7 @@ public class Course{
   public String toString(){
     String s = "";
     s = "";
-    s += "Course Name: " + this.courseName + "\n";
+    s += "\nCourse Name: " + this.courseName + "\n";
     s += this.professor.toString() + "\n";
     s += "Students: \n";
     for (int i = 0; i < this.students.length; i++){

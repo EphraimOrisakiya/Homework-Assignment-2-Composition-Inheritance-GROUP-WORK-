@@ -45,9 +45,9 @@ public class Teacher extends Person{ //making subclass teacher
     }
 
     public String toString(){
-        String s = super.toString() + "\nStudent Info: ";
+        String s = super.toString() + "\nTeacher Info: ";
         s += "\nID: " + this.id;
-        s += "\nSalary: " + this.monthly_salary;
+        s += "\nSalary: $" + this.monthly_salary;
         s += "\nNumber of years teaching: " + this.numofyearteaching;
         return s;
     }

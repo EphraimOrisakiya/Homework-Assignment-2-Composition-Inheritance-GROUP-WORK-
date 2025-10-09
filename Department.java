@@ -70,8 +70,10 @@ public class Department{ //creating clas department
     public String toString(){
         String s = "\nDepartment Info: ";
         s += "\nChair: " + this.chair.toString();
-        s += "\nFaculty: " + this.faculty.toString();
-        s += "\nCourses: " + this.courses.toString();
+        s += "\nFaculty: ";
+        for(Professor i : this.faculty){s += i.toString();};
+        s += "\nCourses: ";
+        for(Course i: this.courses){s += i.toString();};
         return s;
     }
     
