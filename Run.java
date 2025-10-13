@@ -1,3 +1,5 @@
+//ATTEMPTING EXTRA CREDIT
+
 public class Run {
     
     public static void main(String[] args){
@@ -47,6 +49,9 @@ public class Run {
         //creating a department object
         Department department1 = new Department(chair1, professors, courses);
         System.out.println(department1.toString());
+
+        //testing extra credit
+        System.out.println(student1.getDepartment());
 
     }
 }
