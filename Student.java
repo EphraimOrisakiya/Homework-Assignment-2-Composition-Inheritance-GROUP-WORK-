@@ -5,19 +5,50 @@ public class Student extends Person{ //creating subclass student
     private double gpa;
 
     //EXTRA CREDIT 
-    public void setCourse(Course course){ //EXTRA CREDIT
-        System.out.println("Students cannot set course"); //Restricting access by overidding the setCourse method
+    public Professor getChair(Department department){ //EXTRA CREDIT
+        return department.getChair(); //ALLOWING STUDENT TO GET CHAIR OF DEPARTMENT
     }
-    public void setDepartment(Department department){ //EXTRA CREDIT
-        System.out.println("Students cannot set department"); //Restricting access by overidding the setDepartment method
+    public void setChair(Professor chair){ //EXTRA CREDIT
+        System.out.println("\nStudents cannot set chair\n"); //RESTRICTING STUDENTS FROM SETTING CHAIR
     }
-    public Department getDepartment(Department department){ //EXTRA CREDIT
-        return new Department(department); //ALLOWING STUDENT TO GET DEPARTMENT
+    public Professor[] getFaculty(Department department){ //EXTRA CREDIT
+        return department.getFaculty(); //ALLOWING STUDENT TO GET FACULTY OF DEPARTMENT
     }
-    public Course getCourse(Course course){ //EXTRA CREDIT
-        return new Course(course);  //ALLOWING STUDENT TO GET COURSE
+    public void setFaculty(Professor[] faculty){ //EXTRA CREDIT
+        System.out.println("\nStudents cannot set Faculty\n"); //RESTRICTING STUDENTS FROM SETTING FACULTY
     }
-
+    public Course[] getCourses(Department department){ //EXTRA CREDIT
+        return department.getCourses(); //ALLOWING STUDENT TO GET COURSES OF DEPARTMENT
+    }
+    public void setCourses(Course[] courses){ //EXTRA CREDIT
+        System.out.println("\nStudents cannot set courses\n"); //RESTRICTING STUDENTS FROM SETTING COURSES
+    }
+    public Professor getProfessor(Course course){ //EXTRA CREDIT
+        return course.getProfessor(); //ALLOWING STUDENT TO GET PROFESSOR OF COURSE
+    }
+    public void setProfessor(Professor professor){ //EXTRA CREDIT
+        System.out.println("\nStudents cannot set Professor\n"); //RESTRICTING STUDENTS FROM SETTING PROFESSOR
+    }
+    public CollegeStudent[] getStudents(Course course){ //EXTRA CREDIT
+        return course.getStudents(); //ALLOWING STUDENT TO GET STUDENTS OF COURSE
+    }
+    public void setStudents(CollegeStudent[] students){ //EXTRA CREDIT
+        System.out.println("\nStudents cannot set Students\n"); //RESTRICTING STUDENTS FROM SETTING STUDENTS
+    }
+    public String getCourseName(Course course){ //EXTRA CREDIT
+        return course.getCourseName(); //ALLOWING STUDENT TO GET COURSENAME OF COURSE
+    }
+    public void setCourseName(String courseName){ //EXTRA CREDIT
+        System.out.println("\nStudents cannot set Course Name\n"); //RESTRICTING STUDENTS FROM SETTING COURSENAME
+    }
+    public String toString(Department department){ //EXTRA CREDIT
+        String s = department.toString(); //ALLOWING STUDENT TO PRINT DEPARTMENT INFO
+        return s;
+    }
+    public String toString(Course course){ //EXTRA CREDIT
+        String s = course.toString(); //ALLOWING STUDENT TO PRINT COURSE INFO
+        return s;
+    }
     //EXTRA CREDIT ^^^
 
     public Student(String name, Boolean alive, int age, String SSN, String stu_id, double gpa){

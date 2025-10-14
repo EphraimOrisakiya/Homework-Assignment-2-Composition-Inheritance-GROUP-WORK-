@@ -60,13 +60,26 @@ public class Run {
         System.out.println(department2.toString());
 
         //TESTING EXTRA CREDIT!!!
-        teacher1.setDepartment(department1); //setting department for teacher
-        System.out.println("\nGetting Department for Teacher - \n" + teacher1.getDepartment());//getting department for teacher
+        //STUDENTS SHOULD BE ABLE TO GET BUT NOT SET DEPARTMENT AND COURSE INFO
+        System.out.println("\nGetting Department chair from student -\n" + student1.getChair(department2)); //Getting chair from student
+        student1.setChair(professor3); //trying to set chair from student (doesnt work)
+        student1.setFaculty(professors); //trying to set faculty from student (doesnt work)
+        student1.setCourses(courses); //trying to set courses from student (doesnt work)
+        System.out.println("\nGetting Course name from student -\n" + student1.getCourseName(course2)); //Getting course name from student
+        student1.setCourseName("New Course Name"); //trying to set course name from student (doesnt work)
+        System.out.println("\nGetting Department faculty from student -\n" + student1.toString(department2));
 
-        teacher1.setCourse(course2); //setting course for teacher
-        System.out.println("\nGetting Course for Teacher - \n" + teacher1.getCourse()); //getting course for teacher
+        //PROFESSORS SHOULD BE ABLE TO GET AND SET DEPARTMENT AND COURSE INFO
+        professor1.setChair(professor3, department1); //setting chair from professor
+        System.out.println("\nGetting Department chair from professor -\n" + professor1.getChair(department1)); //Getting chair from professor
+        professor1.setFaculty(professors, department1); //setting faculty from professor
+        System.out.println("\nPrinting Department info from professor -\n" + professor1.toString(department1)); //Printing department info from professor
+        professor1.setCourses(courses, department1); //setting courses from professor
+        System.out.println("\nPrinting Course info from professor -\n" + professor1.toString(course1)); //Printing course info from professor
+        professor1.setProfessor(professor2, course1); //setting professor for course1 from professor
+        System.out.println("\nGetting Professor from professor -\n" + professor1.getProfessor(course1)); //Getting professor from professor
+        professor1.setCourseName("New Course Name", course1); //setting course name from professor
+        System.out.println("\nGetting Course name from professor -\n" + professor1.getCourseName(course1)); //Getting course name from professor
 
-        student1.setDepartment(department2); //setting department for student (IT IS RESTRICTED SO DOESNT WORK!)
-        System.out.println("\nGetting Department for Student - \n" + student1.getDepartment(department1));
     }
 }

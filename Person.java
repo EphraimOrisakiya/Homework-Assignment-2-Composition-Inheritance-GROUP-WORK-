@@ -1,25 +1,8 @@
-//ATTEMPTING EXTRA CREDIT
-
 public class Person{ //Here im making the person class
     private String name; //adding the class attributes
     private Boolean alive;
     private int age;
     private String SSN;
-    private Department department; //EXTRA CREDIT
-    private Course course; //EXTRA CREDIT
-
-    public Department getDepartment(){  //EXTRA CREDIT - MAKING GET DEPARTMENT METHOD ACCESIBLE TO ALL CLASSES
-        return new Department(this.department);
-    }
-    public Course getCourse(){ //EXTRA CREDIT - MAKING GET COURSE METHOD ACCESIBLE TO ALL CLASSES
-        return new Course(this.course);
-    }
-    protected void setDepartment(Department department){ //EXTRA CREDIT
-        this.department = new Department(department);
-    }
-    protected void setCourse(Course course){ //EXTRA CREDIT
-        this.course = new Course(course);
-    }
 
     public Person(String name, Boolean alive, int age, String ssn){ //making the fully loaded constructor
         this.name = name;

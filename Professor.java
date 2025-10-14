@@ -1,9 +1,58 @@
+//ATTEMPTING EXTRA CREDIT
+
 public class Professor extends Teacher{
   // Instance Variables
   private String specialty;
   private String researchArea;
   private String rank;
   private boolean tenured;
+
+  //EXTRA CREDIT
+  public Professor getChair(Department department){ //EXTRA CREDIT
+      return department.getChair(); //ALLOWING PROFESSOR TO GET CHAIR OF DEPARTMENT
+  }
+  public void setChair(Professor chair, Department department){ //EXTRA CREDIT
+    department.setChair(chair); //ALLOWING PROFESSOR TO SET CHAIR OF DEPARTMENT
+  }
+  public Professor[] getFaculty(Department department){ //EXTRA CREDIT
+      return department.getFaculty(); //ALLOWING PROFESSOR TO GET FACULTY OF DEPARTMENT
+  }
+  public void setFaculty(Professor[] faculty, Department department){ //EXTRA CREDIT
+    department.setFaculty(faculty); //ALLOWING PROFESSOR TO SET FACULTY OF DEPARTMENT
+  }
+  public Course[] getCourses(Department department){ //EXTRA CREDIT
+      return department.getCourses(); //ALLOWING PROFESSOR TO GET COURSES OF DEPARTMENT
+  }
+  public void setCourses(Course[] courses, Department department){ //EXTRA CREDIT
+    department.setCourses(courses); //ALLOWING PROFESSOR TO SET COURSES OF DEPARTMENT
+  }
+  public Professor getProfessor(Course course){ //EXTRA CREDIT
+      return course.getProfessor(); //ALLOWING PROFESSOR TO GET PROFESSOR OF COURSE
+  }
+  public void setProfessor(Professor professor, Course course){ //EXTRA CREDIT
+    course.setProfessor(professor); //ALLOWING PROFESSOR TO SET PROFESSOR OF COURSE
+  }
+  public CollegeStudent[] getStudents(Course course){ //EXTRA CREDIT
+      return course.getStudents(); //ALLOWING PROFESSOR TO GET STUDENTS OF COURSE
+  }
+  public void setStudents(CollegeStudent[] students, Course course){ //EXTRA CREDIT
+    course.setStudents(students); //ALLOWING PROFESSOR TO SET STUDENTS OF COURSE
+  }
+  public String getCourseName(Course course){ //EXTRA CREDIT
+      return course.getCourseName(); //ALLOWING PROFESSOR TO GET COURSENAME OF COURSE
+  }
+  public void setCourseName(String courseName, Course course){ //EXTRA CREDIT
+    course.setCourseName(courseName); //ALLOWING PROFESSOR TO SET COURSENAME OF COURSE
+  }
+  public String toString(Department department){ //EXTRA CREDIT
+      String s = department.toString(); //ALLOWING PROFESSOR TO PRINT DEPARTMENT INFO
+      return s;
+  }
+  public String toString(Course course){ //EXTRA CREDIT
+      String s = course.toString(); //ALLOWING PROFESSOR TO PRINT COURSE INFO
+      return s;
+  }
+  //EXTRA CREDIT ^^^
 
   // Constructors
   //Fully loaded constructor
