@@ -1,6 +1,17 @@
+//ATTEMPTING EXTRA CREDIT
+
 public class Student extends Person{ //creating subclass student
     private String stu_id;
     private double gpa;
+
+    //EXTRA CREDIT 
+    public void setCourse(Course course){ //EXTRA CREDIT
+        System.out.println("Students cannot set course"); //Restricting access by overidding the setCourse method
+    }
+    public void setDepartment(Department department){ //EXTRA CREDIT
+        System.out.println("Students cannot set department"); //Restricting access by overidding the setDepartment method
+    }
+    //EXTRA CREDIT ^^^
 
     public Student(String name, Boolean alive, int age, String SSN, String stu_id, double gpa){
         super(name, alive, age, SSN); //calling the base class constructor
