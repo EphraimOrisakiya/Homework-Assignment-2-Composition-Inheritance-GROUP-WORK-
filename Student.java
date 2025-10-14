@@ -11,6 +11,13 @@ public class Student extends Person{ //creating subclass student
     public void setDepartment(Department department){ //EXTRA CREDIT
         System.out.println("Students cannot set department"); //Restricting access by overidding the setDepartment method
     }
+    public Department getDepartment(Department department){ //EXTRA CREDIT
+        return new Department(department); //ALLOWING STUDENT TO GET DEPARTMENT
+    }
+    public Course getCourse(Course course){ //EXTRA CREDIT
+        return new Course(course);  //ALLOWING STUDENT TO GET COURSE
+    }
+
     //EXTRA CREDIT ^^^
 
     public Student(String name, Boolean alive, int age, String SSN, String stu_id, double gpa){

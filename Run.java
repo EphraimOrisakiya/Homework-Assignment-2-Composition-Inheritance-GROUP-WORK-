@@ -67,6 +67,6 @@ public class Run {
         System.out.println("\nGetting Course for Teacher - \n" + teacher1.getCourse()); //getting course for teacher
 
         student1.setDepartment(department2); //setting department for student (IT IS RESTRICTED SO DOESNT WORK!)
-        System.out.println("\nGetting Department for Student - \n" + student1.getDepartment());
+        System.out.println("\nGetting Department for Student - \n" + student1.getDepartment(department1));
     }
 }
